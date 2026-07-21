@@ -5,7 +5,9 @@ const knowledge = require("./faqData");
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
+app.use(cors({
+    origin: "*"
+}));
 app.use(express.json());
 
 
